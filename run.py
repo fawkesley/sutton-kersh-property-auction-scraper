@@ -227,7 +227,7 @@ def add_calculations(row):
         row['_price_20pct_yield'] = annual_income / 0.20
 
         if guide_price_high:
-            row['_yield_guide_price_high'] = (guide_price_high / annual_income) / 100
+            row['_yield_guide_price_high'] = (annual_income / guide_price_high)
 
 
 if __name__ == '__main__':
